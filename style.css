@@ -1,0 +1,44 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    
+}
+
+.grid-container > div {
+    background-color: lightblue;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.sudoku-grid {
+    background-color: aqua;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-width: medium;
+}
+
+td {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.first, .second {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.third {
+    border-right: 1px solid black;
+    border-right-width: thick;
+    border-bottom-width: thick;
+    border-bottom: 1px solid black;
+}
+
+.sudoku-third > td{
+    border-bottom-width: medium;
+}
