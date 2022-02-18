@@ -42,3 +42,31 @@ td {
 .sudoku-third > td{
     border-bottom-width: medium;
 }
+
+.center, .buttonBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    margin-top: 50px;
+}
+
+.buttonBlock {
+    margin-top: 20px;
+}
+
+button {
+    cursor: pointer;
+    align-items: center;
+    margin-right:16px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: rgb(200,200,200);
+}
