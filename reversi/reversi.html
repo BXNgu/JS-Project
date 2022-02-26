@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Minigame &#8226 Reversi</title>
+    </head>
+
+    <body>
+        <canvas class="logo"></canvas>
+        <div class="title">
+            <p>Minigame &#8226 Reversi</p>
+            <p>created by</p>
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="active" href="../sudoku/sudoku.html">Sudoku</a></li>
+            <li><a href="reversi.html">Reversi</a></li>
+            <li><a href="#contact">Coming Soon...</a></li>
+            <li><a href="#about">Coming Soon...</a></li>
+            <li><a href="#about">Coming Soon...</a></li>
+        </ul>
+
+        <div class="center">
+            <table class="reversi-grid" id="reversi-table">
+                <tr>
+                    <td class="first" id="00">&nbsp;&nbsp;</td>
+                    <td class="second" id="01">&nbsp;&nbsp;</td>
+                    <td class="third" id="02">&nbsp;&nbsp;</td>
+                    <td class="first" id="03">&nbsp;&nbsp;</td>
+                    <td class="second" id="04">&nbsp;&nbsp;</td>
+                    <td class="third" id="05">&nbsp;&nbsp;</td>
+                    <td class="first" id="06">&nbsp;&nbsp;</td>
+                    <td class="second" id="07">&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="first" id="10">&nbsp;&nbsp;</td>
+                    <td class="second" id="11">&nbsp;&nbsp;</td>
+                    <td class="third" id="12">&nbsp;&nbsp;</td>
+                    <td class="first" id="13">&nbsp;&nbsp;</td>
+                    <td class="second" id="14">&nbsp;&nbsp;</td>
+                    <td class="third" id="15">&nbsp;&nbsp;</td>
+                    <td class="first" id="16">&nbsp;&nbsp;</td>
+                    <td class="second" id="17">&nbsp;&nbsp;</td>
+                </tr>
+                <tr class="sudoku-third">
+                    <td class="first" id="20">&nbsp;&nbsp;</td>
+                    <td class="second" id="21">&nbsp;&nbsp;</td>
+                    <td class="third" id="22">&nbsp;&nbsp;</td>
+                    <td class="first" id="23">&nbsp;&nbsp;</td>
+                    <td class="second" id="24">&nbsp;&nbsp;</td>
+                    <td class="third" id="25">&nbsp;&nbsp;</td>
+                    <td class="first" id="26">&nbsp;&nbsp;</td>
+                    <td class="second" id="27">&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="first" id="30">&nbsp;&nbsp;</td>
+                    <td class="second" id="31">&nbsp;&nbsp;</td>
+                    <td class="third" id="32">&nbsp;&nbsp;</td>
+                    <td class="first" id="33">&nbsp;&nbsp;</td>
+                    <td class="second" id="34">&nbsp;&nbsp;</td>
+                    <td class="third" id="35">&nbsp;&nbsp;</td>
+                    <td class="first" id="36">&nbsp;&nbsp;</td>
+                    <td class="second" id="37">&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="first" id="40">&nbsp;&nbsp;</td>
+                    <td class="second" id="41">&nbsp;&nbsp;</td>
+                    <td class="third" id="42">&nbsp;&nbsp;</td>
+                    <td class="first" id="43">&nbsp;&nbsp;</td>
+                    <td class="second" id="44">&nbsp;&nbsp;</td>
+                    <td class="third" id="45">&nbsp;&nbsp;</td>
+                    <td class="first" id="46">&nbsp;&nbsp;</td>
+                    <td class="second" id="47">&nbsp;&nbsp;</td>
+                </tr>
+                <tr class="sudoku-third">
+                    <td class="first" id="50">&nbsp;&nbsp;</td>
+                    <td class="second" id="51">&nbsp;&nbsp;</td>
+                    <td class="third" id="52">&nbsp;&nbsp;</td>
+                    <td class="first" id="53">&nbsp;&nbsp;</td>
+                    <td class="second" id="54">&nbsp;&nbsp;</td>
+                    <td class="third" id="55">&nbsp;&nbsp;</td>
+                    <td class="first" id="56">&nbsp;&nbsp;</td>
+                    <td class="second" id="57">&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="first" id="60">&nbsp;&nbsp;</td>
+                    <td class="second" id="61">&nbsp;&nbsp;</td>
+                    <td class="third" id="62">&nbsp;&nbsp;</td>
+                    <td class="first" id="63">&nbsp;&nbsp;</td>
+                    <td class="second" id="64">&nbsp;&nbsp;</td>
+                    <td class="third" id="65">&nbsp;&nbsp;</td>
+                    <td class="first" id="66">&nbsp;&nbsp;</td>
+                    <td class="second" id="67">&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="first" id="70">&nbsp;&nbsp;</td>
+                    <td class="second" id="71">&nbsp;&nbsp;</td>
+                    <td class="third" id="72">&nbsp;&nbsp;</td>
+                    <td class="first" id="73">&nbsp;&nbsp;</td>
+                    <td class="second" id="74">&nbsp;&nbsp;</td>
+                    <td class="third" id="75">&nbsp;&nbsp;</td>
+                    <td class="first" id="76">&nbsp;&nbsp;</td>
+                    <td class="second" id="77">&nbsp;&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="buttonBlock">
+            <button id="single" onclick="singlePlayer()">Single Player</button>
+            <button id="multi" onclick="multiplayer()">Multiplayer</button>
+            <button id="end" onclick="end()" disabled>End</button>
+            <button id="next" onclick="sing()">Next</button>
+            <button id="next2" onclick="multiplayer()">Next</button>
+        </div>
+        <script src="reversi.js"></script>
+    </body>
+    
+</html>

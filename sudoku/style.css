@@ -4,6 +4,8 @@
     height: 75px;
     margin-left: 50px;
     margin-top: 25px;
+    background-image: url('sg.png');
+    background-size: 75px 75px;
 }
 
 .title {
@@ -45,10 +47,10 @@ li a:hover {
 }
 
 .sudoku-grid {
-    background-color: aqua;
+    background-color: whitesmoke;
     border: 1px solid black;
     border-collapse: collapse;
-    border-width: medium;
+    border-width: thick;
 }
 
 .sudoku-grid:hover {
@@ -56,7 +58,7 @@ li a:hover {
 }
 
 td {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     border-collapse: collapse;
     height: 30px;
     width: 30px;
@@ -70,14 +72,14 @@ td {
 
 .third {
     border-right: 1px solid black;
-    /* border-right-width: thick;
-    border-bottom-width: thick; */
+    border-right-width: thick;
+    border-bottom-width: thick;
     border-bottom: 1px solid black;
 }
 
-/* .sudoku-third > td{
-    border-bottom-width: medium;
-} */
+.sudoku-third > td{
+    border-bottom-width: thick;
+}
 
 .center, .buttonBlock {
     display: flex;

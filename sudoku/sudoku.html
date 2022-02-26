@@ -3,10 +3,23 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <title>Sudoku</title>
+        <title>Minigame &#8226 Sudoku</title>
     </head>
 
     <body>
+        <canvas class="logo"></canvas>
+        <div class="title">
+            <p>Minigame &#8226 Sudoku</p>
+            <p>created by</p>
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="active" href="sudoku.html">Sudoku</a></li>
+            <li><a href="../reversi/reversi.html">Reversi</a></li>
+            <li><a href="#contact">Coming Soon...</a></li>
+            <li><a href="#about">Coming Soon...</a></li>
+            <li><a href="#about">Coming Soon...</a></li>
+        </ul>
         <div class="center">
             <table class="sudoku-grid" id="sudoku-table">
                 <tr>
@@ -106,7 +119,7 @@
                     <td class="third" id="85">&nbsp;&nbsp;</td>
                     <td class="first" id="86">&nbsp;&nbsp;</td>
                     <td class="second" id="87">&nbsp;&nbsp;</td>
-                    <td class="third" id="88">&nbsp;&nbsp;</td>
+                    <td class="third" id="88"></td>
                 </tr>
             </table>
         </div>
@@ -118,6 +131,7 @@
             <button id="saveButton" onclick="save()" disabled>Save</button>
             <button onclick="clearSudoku()">Clear</button>
         </div>
+        
         <script src="sudoku.js"></script>
     </body>
     
