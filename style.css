@@ -1,9 +1,10 @@
 .logo {
-    border:1px solid #000000;
     width: 75px;
     height: 75px;
     margin-left: 50px;
     margin-top: 25px;
+    background-image: url("logo.png");
+    background-size: 75px 75px;
 }
 
 .title {

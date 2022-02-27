@@ -22,3 +22,6 @@ Implementation in JS, HTML, and CSS
 2. UI update *(Update: 24/2/2022 1:52 pm)*
    - Update UI on the Reversi
    - Create buttons
+
+## Special Thanks
+**Joanne Kok Joo En** for designing the Logo
